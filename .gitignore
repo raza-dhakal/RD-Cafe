@@ -1,0 +1,22 @@
+# macOS system files
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+env/
+
+# SQLite or DB files (if using local)
+*.db
+*.sqlite3
+
+# Flask secret key or config
+config.py
+instance/
+
+# VS Code workspace settings
+.vscode/
