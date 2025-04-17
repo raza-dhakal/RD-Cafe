@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>画像リサイズ表示</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="file" id="upload" accept="image/*">
+        
+        <!-- 画像のサイズ情報を表示するエリア -->
+        <div id="fileInfo"></div>
+
+        <div class="input-group">
+            <label for="resizeWidth">リサイズ幅 (ピクセル):</label>
+            <input type="number" id="resizeWidth" placeholder="幅を入力" required>
+        </div>
+
+        <button id="processImage">画像をリサイズして表示</button>
+        
+        <!-- ダウンロードボタンを追加 -->
+        <div id="downloadContainer"></div>
+
+        <canvas id="canvas"></canvas> <!-- リサイズ後の画像を表示するキャンバス -->
+    </div>
+
+    <script>
+        // ファイルが選択されたときの処理
+        document.getElementById('upload').addEventListener('change', function (e) {
+            const file = e.target.files[0];
+            if (file) {
+                const img = new Image();
+                
+                img.onload = function () {
+                    const fileInfo = document.getElementById('fileInfo');
+                    fileInfo.innerHTML = `
+                        <p>ファイルサイズ: ${(file.size / 1024).toFixed(2)} KB</p>
+                        <p>画像サイズ: ${img.width} x ${img.height} ピクセル</p>
+                    `;
+                };
+
+                img.src = URL.createObjectURL(file);
+            }
+        });
+
+        // リサイズ処理とダウンロードボタンの生成
+        document.getElementById('processImage').addEventListener('click', function () {
+            const file = document.getElementById('upload').files[0];
+            const resizeWidth = parseInt(document.getElementById('resizeWidth').value);
+
+            // ファイルと入力値のチェック
+            if (!file || isNaN(resizeWidth)) {
+                alert("ファイルを選択し、リサイズの幅を入力してください。");
+                return;
+            }
+
+            const img = new Image();
+
+            img.onload = function () {
+                const aspectRatio = img.height / img.width;
+                const newHeight = resizeWidth * aspectRatio;
+
+                // リサイズ後のキャンバス作成と描画
+                const canvas = document.getElementById('canvas');
+                canvas.width = resizeWidth;
+                canvas.height = newHeight;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(img, 0, 0, resizeWidth, newHeight);
+
+                // ダウンロードボタンの生成
+                canvas.toBlob((blob) => {
+                    const downloadContainer = document.getElementById('downloadContainer');
+                    downloadContainer.innerHTML = ""; // 既存のダウンロードリンクをクリア
+
+                    const url = URL.createObjectURL(blob);
+                    const downloadLink = document.createElement('a');
+                    downloadLink.href = url;
+                    downloadLink.download = 'resized_image.png';
+                    downloadLink.textContent = 'ダウンロード';
+                    downloadLink.classList.add('button');  // ボタンのスタイルを適用
+
+                    downloadContainer.appendChild(downloadLink);
+                });
+            };
+
+            img.src = URL.createObjectURL(file);
+        });
+    </script>
+</body>
+</html>

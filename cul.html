@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator | AsmrProg</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="screen" id="display">
+            0
+        </section>
+
+        <section class="calc-buttons">
+            <button class="calc-button" onclick="appendNumber(1)">1</button>
+            <button class="calc-button" onclick="appendNumber(2)">2</button>
+            <button class="calc-button" onclick="appendNumber(3)">3</button>
+            <button class="calc-button" onclick="chooseOperation('+')">+</button>
+            <button class="calc-button" onclick="appendNumber(4)">4</button>
+            <button class="calc-button" onclick="appendNumber(5)">5</button>
+            <button class="calc-button" onclick="appendNumber(6)">6</button>
+            <button class="calc-button" onclick="chooseOperation('-')">-</button>
+            <button class="calc-button" onclick="appendNumber(7)">7</button>
+            <button class="calc-button" onclick="appendNumber(8)">8</button>
+            <button class="calc-button" onclick="appendNumber(9)">9</button>
+            <button class="calc-button" onclick="chooseOperation('*')">*</button>
+            <button class="calc-button calc-button-clear" onclick="clearDisplay()">C</button>
+            <button class="calc-button" onclick="appendNumber(0)">0</button>
+            <button class="calc-button" onclick="calculate()">=</button>
+            <button class="calc-button" onclick="chooseOperation('/')">/</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 480px;
+    height: 600px;
+}
+
+.screen {
+    background-color: #222;
+    color: #fff;
+    font-size: 2.5em;
+    padding: 20px;
+    text-align: right;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.calc-button {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.calc-button:hover {
+    background-color: #ddd;
+}
+
+.calc-button:active {
+    background-color: #bbb;
+}
+
+.calc-button:nth-child(4n) {
+    background-color: #ff9500;
+    color: white;
+}
+
+.calc-button:nth-child(4n):hover {
+    background-color: #e68900;
+}
+
+.calc-button:nth-child(4n):active {
+    background-color: #cc7900;
+}
+
+.calc-button-clear {
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 10px;
+}
+
+.calc-button-clear:hover {
+    background-color: #e60000;
+}
+
+.calc-button-clear:active {
+    background-color: #cc0000;
+    
+</style>

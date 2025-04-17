@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee & Tea Menu</title>
+    <link rel="stylesheet" href="styles.css">
+
+    
+</head>
+<body>
+    <!-- Navnar -->
+ <header>
+    <a href="#" class="logo">
+        <img src="pic/logo.png" alt="">
+    </a>
+    <!-- Menu-Icon -->
+    <i class='bx bx-search' id="search-icon"></i><!-- check! -->
+     <!-- Links -->
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#customers">Customers</a></li>
+      </ul>
+      <!-- Icon -->
+       <div class="header-icon">
+        <i class='bx bx-cart-alt' ></i>
+        <i class='ba ba-search' id="search-icon"></i>
+    
+    </div>
+    <!-- Searchh Box -->
+    <div class="search-box">
+        <input type="search" name="" id="" placeholder="Search Here...">
+    </div><!-- check! -->
+</div>
+
+ </header>
+ <!-- Home -->
+  <section class="home" id="home">
+    <div class="home-text">
+        <h1> Good Morning<br> Start Your Day <br> with Coffee</h1>
+        
+       
+    </div>
+  
+  </section>
+ 
+
+    
+    <div class="menu-container">
+        <!--logo Section-->
+        <h1>Coffee & Tea Menu</h1>
+
+        <div class="menu-section">
+            <h2>Coffee Menu</h2>
+
+            <div class="menu-item">
+                <table border="0" cellpadding="0">
+                    <tr>
+                        <td><img src="pic/espresso.jpg" alt="Espresso"></td>
+                        <td>
+                <table border="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td><h3>Espresso</h3></td>
+                        </tr>
+                        <tr>
+                            <td><p class="menu-text">エスプレッソは、イタリア発祥の濃縮コーヒーで、少量の水を高圧で通して抽出されます。</p> </td>
+                        </tr>
+                        <tr>
+                            <td><p>Price: रु 150</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="inline-group">
+                                    <label for="espresso-quantity" class="large-label">数量:</label>
+                                    <input type="number" id="espresso-quantity" name="quantity" min="0" value="0" class="small-input">
+                                </div>                            
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="menu-item">
+                <img src="pic/cappuccino.jpg" alt="Cappuccino">
+                <div class="menu-details">
+                    <h3>Cappuccino</h3>
+                    <p class="menu-text"></p>
+                    <p>Price: रु 180</p>
+                    <label for="cappuccino-quantity" class="large-label">数量:</label>
+                    <input type="number" id="cappuccino-quantity" name="quantity" min="0" value="0" class="small-input">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="pic/latte.jpg" alt="Latte">
+                <div class="menu-details">
+                    <h3>Latte</h3>
+                    <p class="menu-text"></p>
+                    <p>Price: रु 200</p>
+                    <label for="latte-quantity" class="large-label">数量:</label>
+                    <input type="number" id="latte-quantity" name="quantity" min="0" value="0" class="small-input">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="pic/americano.jpg" alt="Americano">
+                <div class="menu-details">
+                    <h3>Americano</h3>
+                    <p class="menu-text"></p>
+                    <p>Price: रु 170</p>
+                    <label for="americano-quantity" class="large-label">数量:</label>
+                    <input type="number" id="americano-quantity" name="quantity" min="0" value="0" class="small-input">
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="pic/mocha.jpg" alt="Mocha">
+                <div class="menu-details">
+                    <h3>Mocha</h3>
+                    <p class="menu-text"></p>
+                    <p>Price: रु 220</p>
+                    <label for="mocha-quantity" class="large-label">数量:</label>
+                    <input type="number" id="mocha-quantity" name="quantity" min="0" value="0" class="small-input">
+                </div>
+            </div>
+
+            <h2>Tea Menu</h2>
+            <div class="menu-item">
+                <img src="pic/masala_chai.jpg" alt="Masala Chai">
+                <div class="menu-details">
+                    <h3>Masala Chai</h3>
+                    <p class="menu-text"></p>
+                    <p>Price: रु 150</p>
+                    <label for="masala-chai-quantity" class="large-label">数量:</label>
+                    <input type="number" id="masala-chai-quantity" name="quantity" min="0" value="0" class="small-input">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="pic/green_tea.jpg" alt="Green Tea">
+                <div class="menu-details">
+                    <h3>Green Tea</h3>
+                    <p class="menu-text"></p>
+                    <p>Price: रु 120</p>
+                    <label for="green-tea-quantity" class="large-label">数量:</label>
+                    <input type="number" id="green-tea-quantity" name="quantity" min="0" value="0" class="small-input">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="pic/black_tea.jpg" alt="Black Tea">
+                <div class="menu-details">
+                    <h3>Black Tea</h3>
+                    <p class="menu-text"></p>
+                    <p>Price: रु 100</p>
+                    <label for="black-tea-quantity" class="large-label">数量:</label>
+                    <input type="number" id="black-tea-quantity" name="quantity" min="0" value="0" class="small-input">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="pic/milk_tea.jpg" alt="Milk Tea">
+                <div class="menu-details">
+                    <h3>Milk Tea</h3>
+                    <p class="menu-text"></p>
+                    <p>Price: रु 130</p>
+                    <label for="milk-tea-quantity" class="large-label">数量:</label>
+                    <input type="number" id="milk-tea-quantity" name="quantity" min="0" value="0" class="small-input">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="pic/lemon_tea.jpg" alt="Lemon Tea">
+                <div class="menu-details">
+                    <h3>Lemon Tea</h3>
+                    <p class="menu-text"></p>
+                    <p>Price: रु 140</p>
+                    <label for="lemon-tea-quantity" class="large-label">数量:</label>
+                    <input type="number" id="lemon-tea-quantity" name="quantity" min="0" value="0" class="small-input">
+                </div>
+            </div>
+
+            <button id="calculateOrder">Order</button>
+
+<!-- 注文内容のHTML -->
+<div id="order-summary">
+    <h2>Order Details</h2>
+    <table id="orderTable" border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Order Name</th>
+                <th>Quantity</th>
+                <th>Total Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 注文内容がここに表示されます -->
+        </tbody>
+    </table>
+
+    <!-- 全てリセットするボタン -->
+    <button id="resetAll" type="button">Order Reset</button> <!-- リセットボタンを追加 -->
+</div>
+
+<script>
+    document.getElementById('calculateOrder').addEventListener('click', function() {
+        // 各商品と数量を取得
+        const products = [
+            { name: 'Espresso', price: 150, quantity: document.getElementById('espresso-quantity').value },
+            { name: 'Cappuccino', price: 180, quantity: document.getElementById('cappuccino-quantity').value },
+            { name: 'Latte', price: 200, quantity: document.getElementById('latte-quantity').value },
+            { name: 'Americano', price: 170, quantity: document.getElementById('americano-quantity').value },
+            { name: 'Mocha', price: 220, quantity: document.getElementById('mocha-quantity').value },
+            { name: 'Masala Chai', price: 150, quantity: document.getElementById('masala-chai-quantity').value },
+            { name: 'Green Tea', price: 120, quantity: document.getElementById('green-tea-quantity').value },
+            { name: 'Black Tea', price: 100, quantity: document.getElementById('black-tea-quantity').value },
+            { name: 'Milk Tea', price: 130, quantity: document.getElementById('milk-tea-quantity').value },
+            { name: 'Lemon Tea', price: 140, quantity: document.getElementById('lemon-tea-quantity').value }
+        ];
+
+        // テーブルのtbodyをクリア
+        const tbody = document.querySelector('#orderTable tbody');
+        tbody.innerHTML = '';
+
+        // 各商品の合計金額を計算し、テーブルに追加
+        products.forEach(product => {
+            if (product.quantity > 0) {
+                const total = product.price * product.quantity;
+                const row = `<tr>
+                                <td>${product.name}</td>
+                                <td>${product.quantity}</td>
+                                <td>रु ${total}</td>
+                            </tr>`;
+                tbody.innerHTML += row;
+            }
+        });
+    });
+
+    // 各商品にリセットボタンを機能させる
+    document.querySelectorAll('.reset-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const targetInputId = this.getAttribute('data-target');
+            document.getElementById(targetInputId).value = 0; // 数量をリセット
+        });
+    });
+
+    // 全体リセットボタンの機能を定義
+    document.getElementById('resetAll').addEventListener('click', function() {
+        // 各数量入力フィールドを0にリセット
+        document.querySelectorAll('input[type="number"]').forEach(input => {
+            input.value = 0;
+        });
+
+        // 注文内容のテーブルをクリア
+        const tbody = document.querySelector('#orderTable tbody');
+        tbody.innerHTML = '';
+    });
+</script>
+ <!-- About --> 
+   
+ <div class="about-text">
+    <h2> Our History</h2>
+    <p>l#########</p>
+   
+    <a href="#" class="btn">Learn More</a>
+</div>
+
+</section>
+<!-- Customers-->
+<section class="customers" id="customers">
+    <div class="heading">
+ <h2>Our Customers</h2><!-- check! -->
+    </div>
+    <!-- Container -->
+     <div class="customers-container">
+      
+        <div class="box">
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            <p> this is my page hello everyone </p>
+            <h2>Raza</h2>
+            <img src="pic/rev2.JPG" alt="">
+     </div>
+     <div class="box">
+        <div class="stars">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <p> Good job bro</p>
+        <h2>Hari</h2>
+        <img src="pic/rev3.JPG" alt="">
+  </section>
+  <section class="footer">
+    <div class="footer-box">
+        <h2>Coffee Shop</h2>
+        <p>Best of luck bro</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-tiktok' ></i></a>
+        </div>
+    </div>
+    <div class="footer-box">
+        <h3>Support</h3>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Help & Support</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Terms Of Use</a></li>
+        <li><a href="#">Product</a></li>
+    </div>
+    <div class="footer-box">
+        <h3>View　Guides</h3>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog Posts</a></li>
+        <li><a href="#">Our Branches</a></li>
+    </div>
+    <div class="footer-box">
+        <h3>Contact</h3>
+        <div class="contact">
+            <span><i class='bx bxs-map'></i>33015 Sunwal-12,Bhumahi Nawalparasi, Nepal</span>
+            <span><i class='bx bxs-phone'></i>+977 9846863458</span>
+            <span><i class='bx bxs-envelope'></i>rd.coffee@shop.com</span>
+        </div>
+    </div>
+  </section>
+  <!-- Copyright -->
+   <div class="copyright">
+    <p>&#169; All Right Reserved</p>
+   </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en"
+<head><!-- check! -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- check! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- check! -->
+    <title> Responsive Coffee Website</title>
+    <!-- Link To CSS -->
+     <link rel="stylesheet" href="style.css">
+     <!-- Box Icons -->
+      <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-- link To JS -->
+     <script src="main.js"></script>
+
+</body>
+<!-- Navnar -->
+ <header>
+    <a href="#" class="logo">
+        <img src="img/logo.png" alt="">
+    </a>
+    <!-- Menu-Icon -->
+    <i class='bx bx-search' id="search-icon"></i><!-- check! -->
+     <!-- Links -->
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#customers">Customers</a></li>
+      </ul>
+      <!-- Icon -->
+       <div class="header-icon" id="products">
+        <i class='bx bx-cart-alt' ></i>
+        <i class='ba ba-search' id="search-icon"></i>
+    
+    </div>
+    <!-- Searchh Box -->
+    <div class="search-box">
+        <input type="search" name="" id="" placeholder="Search Here...">
+    </div><!-- check! -->
+</div>
+
+ </header>
+ <!-- Home -->
+  <section class="home" id="home">
+    <div class="home-text">
+        <h1> Good Morning<br> Start Your Day <br> with Coffee</h1>
+        <p> Lorem ipsum dolor sit amet consectetuur adipidicing elit. </p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+    <div class="home-img"><!-- check! -->
+        <img src="img/main.png" alt="">
+    </div>
+  </section>
+  <!-- About --> 
+   <section class="about" id="about">
+    <div class="about-img">
+        <img src="img/about.jpg" alt="">
+    </div>
+    <div class="about-text">
+        <h2> Our History</h2>
+        <p>lorem ipsum dolor sit amet consectetur adipidicing elit. Delectus facilis  alias pariatur assumenda illo animi nostrum dolorum provident autem exercitationem.</p>
+        <p>lorem ipsum dolor sit amet consectetur adipidicing elit. Delectus facilis  alias pariatur assumenda illo animi nostrum dolorum provident autem exercitationem.</p>
+        <p> lorem ipsum  dolor sit amet consectetur adipidicing elit. Tempora tempore odit officia labore cumque? </p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+
+   </section>
+<!-- Products -->
+ <section class="products" id="products">
+    <div class="heading">
+        <h2>Our popular products</h2>
+
+    </div>
+    <!-- Container -->
+     
+<!-- Container -->
+<div class="products-container">
+    <div class="box">
+        <img src="img/p1.png" alt="">
+        <h3>Americano Pure</h3>
+        <div class="content">
+            <span>$25</span>
+            <a href="#"></a>
+            <a href="#">Add to cart</a>
+        </div>
+    </div>
+</div>
+
+<div class="products-container">
+    <div class="box">
+        <img src="img/p2.png" alt="">
+        <h3>Americano Pure</h3>
+        <div class="content">
+            <span>$25</span> <!-- 修正: spn -> span -->
+            <a href="#"></a>
+            <a href="#">Add to cart</a>
+        </div>
+    </div>
+</div>
+
+<div class="products-container">
+    <div class="box">
+        <img src="img/p3.png" alt="">
+        <h3>Americano Pure</h3>
+        <div class="content">
+            <span>$25</span>
+            <a href="#"></a>
+            <a href="#">Add to cart</a>
+        </div>
+    </div>
+</div>
+
+<div class="products-container">
+    <div class="box">
+        <img src="img/p4.png" alt="">
+        <h3>Americano Pure</h3>
+        <div class="content">
+            <span>$25</span>
+            <a href="#"></a>
+            <a href="#">Add to cart</a>
+        </div>
+    </div>
+</div>
+
+<div class="products-container">
+    <div class="box">
+        <img src="img/p5.png" alt="">
+        <h3>Americano Pure</h3>
+        <div class="content">
+            <span>$25</span>
+            <a href="#"></a>
+            <a href="#">Add to cart</a>
+        </div>
+    </div>
+</div>
+
+<div class="products-container">
+    <div class="box">
+        <img src="img/p6.png" alt="">
+        <h3>Americano Pure</h3>
+        <div class="content">
+            <span>$25</span>
+            <a href="#"></a>
+            <a href="#">Add to cart</a>
+        </div>
+    </div>
+</div>
+<!-- Order Summary Table -->
+<section class="order_summary">
+    <h2> Order Summary</h2>
+    <table id="order_table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Subtotal</th>
+                <th>Tax (10%)</th>
+                <th>Discount (3%)</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="order_table_body"></tbody>
+    </table>
+</section>
+
+ </section>
+ <!-- Customers-->
+  <section class="customers" id="customers">
+    <div class="heading">
+        <h2>Our Customers</h2><!-- check! -->
+    </div>
+    <!-- Container -->
+     <div class="customers-container">
+        <div class="box">
+            <div class="stars">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star-half' ></i>
+            </div>
+            
+            <p> Lorem ipsum dolor sit amet consecteur, adipising elit. Ad accusantium voluptate officia totam obcacati ducimus?</p>
+            <h2>Raza</h2>
+            <img src="img/rev2.jpg" alt="">
+     </div>
+     <div class="box">
+        <div class="stars">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half' ></i>
+        </div>
+        <p> Lorem ipsum dolor sit amet consecteur, adipising elit. Ad accusantium voluptate officia totam obcacati ducimus?</p>
+        <h2>Hari</h2>
+        <img src="img/rev3.jpg" alt="">
+  </section>
+  <section class="footer">
+    <div class="footer-box">
+        <h2>Coffee Shop</h2>
+        <p>lorem ipsum dolor sit amet, consecteur adipisicing elit. voluptatem, facere.</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-tiktok' ></i></a>
+        </div>
+    </div>
+    <div class="footer-box">
+        <h3>Support</h3>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Help & Support</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Terms Of Use</a></li>
+        <li><a href="#">Product</a></li>
+    </div>
+    <div class="footer-box">
+        <h3>View　Guides</h3>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog Posts</a></li>
+        <li><a href="#">Our Branches</a></li>
+    </div>
+    <div class="footer-box">
+        <h3>Contact</h3>
+        <div class="contact">
+            <span><i class='bx bxs-map'></i>33015 Sunwal-12,Bhumahi Nawalparasi, Nepal</span>
+            <span><i class='bx bxs-phone'></i>+977 9846863458</span>
+            <span><i class='bx bxs-envelope'></i>rd.coffee@shop.com</span>
+        </div>
+    </div>
+  </section>
+  <!-- Copyright -->
+   <div class="copyright">
+    <p>&#169;Carpoolvenom All Right Reserved</p>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
